@@ -1,10 +1,10 @@
-# Android device tree for Infinix Infinix X6716B (Infinix-X6716B)
-
-```
 #
 # Copyright (C) 2026 The Android Open Source Project
 # Copyright (C) 2026 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-```
+
+add_lunch_combo omni_Infinix-X6716B-user
+add_lunch_combo omni_Infinix-X6716B-userdebug
+add_lunch_combo omni_Infinix-X6716B-eng
