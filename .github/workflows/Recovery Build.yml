@@ -123,13 +123,6 @@ jobs:
         git clone ${{ github.event.inputs.COMMON_TREE_URL }} -b ${{ github.event.inputs.DEVICE_TREE_BRANCH }} ./${{ github.event.inputs.COMMON_PATH }}
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
-    - name: Unzip Custom Root Folder
-      run: |
-        cd device/infinix/Infinix-X6716B/recovery/root
-        unzip -o root.zip || true
-        rm -f root.zip
-      working-directory: ${{ steps.pwd.outputs.workspace-folder }}
-      
     - name: Check Build Tree
       uses: haya14busa/action-cond@v1
       id: buildtree
